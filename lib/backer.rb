@@ -15,7 +15,7 @@ class Backer
     self.backed_projects << project
     Project.all.each do |proj|
       if project == proj
-        project.a
+        project.add_backer(self)
   end
   
 end
