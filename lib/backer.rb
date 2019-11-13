@@ -16,6 +16,8 @@ class Backer
     Project.all.each do |proj|
       if project == proj
         project.add_backer(self)
+      end
+    end
   end
   
 end
